@@ -1,0 +1,172 @@
+body {
+  padding-top: 50px;
+  background-color: #DDDDFF;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.jumbotron img {
+  width: 100%;
+}
+
+.jumbotron {
+  padding: 0px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.services, .works, .skills, .about, .contact {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.services .grid {
+  margin-bottom: 15px;
+}
+.services h2 {
+  font-weight: normal;
+}
+.services .grid p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*Services-card CSS */
+.services-card {
+  margin: 15px auto;
+  text-align: center;
+  padding: 5px;
+  background-color: #FFFFFF;
+}
+
+hr {
+  width: 70%;
+  border-color: #2222AA;
+}
+
+/* works sesction css */
+.works .grid{
+  margin: 25px;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 200;
+}
+
+.h2, h2 {
+    font-size: 25px;
+}
+
+/*Skills progress bar */
+.skill-card img {
+  padding: 20px 0px 3px 0px;
+}
+.skill-card p {
+  margin-bottom: 3px;
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.about .row {
+  text-align: justify;
+  text-justify: auto;
+}
+
+#about .about, #contact .contact {
+  width: 70%;
+}
+
+.about img {
+  float: left;
+  margin: 0px 20px 20px 0px;
+  border-radius: 50%;
+}
+
+.contact form {
+  width: 70%;
+  align-content: center;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.contact .form-control {
+  margin: 15px 15px;
+  border: 2px solid #337ab7;
+  padding: 10px 10px;
+}
+
+.contact .btn-primary {
+  width: 100%;
+  margin: 0px 12px 0px 12px;
+}
+
+/*      Footer starts      */
+
+footer {
+  background-color: #00FF99;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+footer ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+footer li {
+  margin: 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #00FF99;
+  border: 1px solid #FFF;
+}
+
+footer li:hover {
+  background-color: #FFF;
+}
+
+footer li i {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: #FFF;
+}
+
+footer li i:hover {
+  color: #0F9;
+  cursor: pointer;
+}
+
+footer h4 i {
+  width: 40px;
+}
+
+ul {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style-type: none;
+  margin: 5px 0;
+  overflow: hidden;
+}
