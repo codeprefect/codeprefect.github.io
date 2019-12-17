@@ -1,0 +1,310 @@
+@import "fonts.css";
+
+/* This is the beginning of my styling */
+
+/*#region stylingHelpers*/
+.container {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  min-width: 100vw;
+  position: relative;
+}
+/*#endregion stylingHelpers*/
+
+/*#region landingBackground*/
+.landing {
+  position: relative;
+}
+
+.landing__bg,
+.landing__overlay {
+  min-height: 120vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.landing__bg {
+  background: url('../images/landing_9x16_large.jpg');
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  /* margin: -120px -20px 0px -15px; */
+}
+
+.landing__overlay {
+  background: linear-gradient(
+    to right,
+    #061a48 0%,
+    rgba(1, 3, 21, 0.98) 0%,
+    rgba(1, 5, 16, 0.97) 14.29%,
+    rgba(11, 15, 60, 0.95) 48.87%,
+    rgba(178, 182, 216, 0.95) 84.81%,
+    #cde5d2 100%);
+  opacity: 0.44;
+  z-index: 2;
+}
+/*#endregion landingBackground*/
+
+/*#region headerNavbar*/
+.header {
+  z-index: 4;
+  position: fixed;
+  margin-top: -10vh;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.nav-title {
+  flex: 2 1 auto;
+}
+
+.nav-links {
+  flex: 3 1 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.internal-links {
+  display: flex;
+  flex: 9 1 auto;
+  justify-content: space-evenly;
+}
+
+.external-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo {
+  font-family: "Aller";
+  font-weight: lighter;
+  font-size: 32px;
+  line-height: 27px;
+  text-align: left;
+  color: #edeff5;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.internal-links > a {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact__button {
+  background: #05791c;
+  border: 1px solid #05791c;
+  border-radius: 0.2em;
+  text-decoration: none;
+  color: #edeff5;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  max-width: fit-content;
+}
+
+.internal-links {
+  color: #032715;
+}
+
+.external-links {
+  color: #edeff5;
+}
+
+/*#endregion headerNavbar*/
+
+/*#region intro*/
+
+.landing__content {
+  position: relative;
+  display: flex;
+  flex-flow: row-reverse;
+  z-index: 3;
+  margin-top: 10vh;
+  min-height: 90vh;
+}
+
+.intro__panel {
+  min-width: 40vw;
+  min-height: 55vh;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-flow: column;
+  background: rgba(178, 182, 216, 0.20);
+  padding: 2em;
+}
+
+.intro__text > .hello__text {
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #182193;
+}
+
+.intro__text > .name__text {
+  font-family: Montserrat;
+  font-weight: lighter;
+  margin-right: 0;
+  font-size: 36px;
+  text-align: left;
+  color: #0c063e;
+}
+
+.intro__text > .designation__text {
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #05791c;
+  text-shadow: -1px solid #05791c, 1px solid #05791c, 1px solid #05791c, -1px solid #05791c;
+}
+
+/*#endregion intro*/
+
+/*#region services*/
+.services {
+  background: #ffffff;
+  margin-top: 18vh;
+  padding: 20px;
+  z-index: 3;
+}
+
+.services:before {
+  content: "";
+  height: 180px;
+  margin-top: 1vh;
+  background: #ffffff;
+  transform: skewY(-4deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -96px;
+  z-index: -1;
+}
+
+.services__container {
+  display: flex;
+  padding-bottom: 4em;
+}
+
+.services__title {
+  flex: 3 1 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  min-height: 20em;
+}
+
+.services__sections {
+  flex: 5 1 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-left: 2em;
+}
+
+.services__title > h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 27px;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.services__title > p {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: justify;
+  color: #6e6e6e;
+}
+
+.services__section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex: 1 1 0;
+  max-width: 48%;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(172, 172, 172, 0.35);
+  padding: 2em;
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 1em;
+}
+
+.service__icon {
+  flex: 1 1 0;
+}
+
+.service__summary {
+  flex: 5 1 0;
+  max-width: 90%;
+}
+
+.services h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.services h4 {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: justify;
+  color: #6e6e6e;
+}
+
+/*#endregion services*/
+
+/*#region story*/
+.story {
+  background-color: beige;
+  min-height: 40vh;
+  z-index: 3;
+  width: 1600px;
+  background: url('../images/landing_16x9_large.jpg');
+  background-size: contain;
+  opacity: 1;
+}
+
+/*#endregion story*/

@@ -1,1 +1,0 @@
-# mubarakadeimam.github.io
