@@ -164,7 +164,7 @@
 .intro__text > .hello__text {
   font-family: Roboto;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.05em;
   text-align: left;
   color: #182193;
@@ -182,7 +182,7 @@
 .intro__text > .designation__text {
   font-family: Roboto;
   font-weight: lighter;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   text-align: left;
   color: #05791c;
@@ -251,9 +251,14 @@
   color: #6e6e6e;
 }
 
+.flex-break {
+  flex-basis: 100%;
+  height: 1em;
+}
+
 .services__section {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   flex: 1 1 0;
   max-width: 48%;
@@ -262,18 +267,11 @@
   padding: 2em;
 }
 
-.flex-break {
-  flex-basis: 100%;
-  height: 1em;
-}
-
-.service__icon {
+.service__title {
   flex: 1 1 0;
-}
-
-.service__summary {
-  flex: 5 1 0;
-  max-width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .services h2 {
